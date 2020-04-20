@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B292053F-9CCA-459F-BECE-56A459808ECD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Discord</RootNamespace>
+    <AssemblyName>Discord</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="Comfort" />
+    <Reference Include="PlayerEnums" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Users\shibe\Downloads\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Drawing1.cs" />
+    <Compile Include="DumbHook.cs" />
+    <Compile Include="Esp\ContainerEsp.cs" />
+    <Compile Include="Esp\CorpseEsp.cs" />
+    <Compile Include="Esp\GrenadeEsp.cs" />
+    <Compile Include="Esp\ItemEsp.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GameExfiltrationPoint.cs" />
+    <Compile Include="GameLootContainer.cs" />
+    <Compile Include="GameLootItem.cs" />
+    <Compile Include="GamePlayer.cs" />
+    <Compile Include="GameScene.cs" />
+    <Compile Include="GameUtils.cs" />
+    <Compile Include="Grenade444.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="InternalAccess.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="LootItemRarity.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="nibba.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Render.cs" />
+    <Compile Include="Render33.cs" />
+    <Compile Include="Rendering.cs" />
+    <Compile Include="Renders.cs" />
+    <Compile Include="SecretFinder.cs" />
+    <Compile Include="silent_aim.cs" />
+    <Compile Include="Thermal\ThermalShits.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
